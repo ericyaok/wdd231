@@ -106,22 +106,18 @@ hamMenu.addEventListener("click", () => {
 function createButtons(objectsList, subject) {
     var container = document.getElementById('course-display');
     
-    // Clear any existing buttons before appending new ones (optional)
     container.innerHTML = '';
   
-    // If a subject is provided, filter the list; otherwise, use the full list
     var filteredList = subject 
       ? objectsList.filter(function(obj) {
           return obj.subject === subject;
         })
       : objectsList;
   
-    // Loop through the filtered list (or full list if no subject was provided)
     filteredList.forEach(function(obj) {
       var button = document.createElement('button');
       button.textContent = obj.subject;
       
-      // Add the 'finish' class if the completed property is true
       if (obj.completed === true) {
         button.classList.add('finish');
       }
@@ -131,25 +127,20 @@ function createButtons(objectsList, subject) {
   }
   
  
-  
-// Grab the button with id 'all'
+
 var allButton = document.getElementById('all');
 var cseButton = document.getElementById('cse');
 var wddButton = document.getElementById('wdd');
 
-// Add the click event listener to the 'all' button
 allButton.addEventListener('click', function() {
-  // Call the createButtons function when 'all' button is clicked
   createButtons(courses);
 });
 
 cseButton.addEventListener('click', function() {
-    // Call the createButtons function when 'all' button is clicked
     createButtons(courses,'CSE');
   });
 
   wddButton.addEventListener('click', function() {
-    // Call the createButtons function when 'all' button is clicked
     createButtons(courses,'WDD');
   });
   
