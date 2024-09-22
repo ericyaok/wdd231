@@ -1,14 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="WDD 231 - Web Front-End Development 1 Course HomePage - Eric Kodzi">
+    <meta name="author" content="Eric Kodzi">
+    <title>WDD 231 - Web Front-End Development - Eric Kodzi</title>
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/homepage-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="scripts/homepage.js" defer></script>
 </head>
+
 <body>
+    <!-- <div class="container"> -->
+    <header>
+        <div id="profile">
+            <img src="images/profile-image.jpg" alt="profile image">
+            <h2>Eric Yao Kodzi</h2>
+        </div>
+        <nav>
+            <div class="ham-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <div class="off-screen-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">Github Profile</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
 
-    <h1>wdd231 Initial Setup</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Course Work</h2>
+            <ol>
+                <li>Research projects</li>
+                <li>Written essays or reports</li>
+                <li>Problem-solving exercises</li>
+                <li>Group work and presentations</li>
+                <li>Practical experiments or lab work</li>
+              </ol>
+              
+        </section>
+        <section>
+            <h2>Accra Ghana</h2>
+            <figure>
+                <img src="images/cocoa-tree.webp" alt="cocoa tree">
+                <figcaption>Cocoa Tree</figcaption>
+            </figure>
+            
+        </section>
+        <section>
+            <h2>Web and computer Programming Certificate</h2>
+           <div id="course-filter">
+            <button id="all">ALL</button>
+            <button id="cse">CSE</button>
+            <button id="wdd">WDD</button>
+           </div>
+           <div id="course-display"></div>
+        </section>
 
+    </main>
+
+    <footer>
+        <p> &copy; <span id="currentyear"></span> Eric Kodzi - Ghana</p>
+        <p>Last Modification: <span id="modified"></span></p>
+    </footer>
+    <!-- </div> -->
 </body>
+
 </html>
