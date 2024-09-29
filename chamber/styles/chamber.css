@@ -1,0 +1,140 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+header {
+    display: flex;
+    padding: .5rem 1rem;
+    justify-content: space-between;
+    border-bottom: 2px solid #5C4033;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 1.2rem;
+    color: #5C4033;
+    margin-bottom: .5rem;
+}
+
+#ham-menu {
+    color: #5C4033;
+    font-size: 2.5rem;
+}
+
+nav {
+    background-color: burlywood;
+
+}
+
+nav li {
+    list-style: none;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+nav li a {
+    color: #5C4033;
+    font-weight: bold;
+}
+
+#menu-links {
+    display: none;
+}
+
+#menu-links.open {
+    display: block;
+}
+
+.grid-style {
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-style h3,
+.grid-style p,
+.grid-style a,
+.grid-style img {
+    margin: .5rem auto;
+}
+
+.grid-style.table-view {
+    display: grid;
+    grid-column: 280px;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-style.table-view:nth-child(even) {
+    background-color: palegreen;
+}
+
+.grid-style.table-view:nth-child(odd) {
+    background-color: papayawhip;
+}
+
+
+#view-buttons-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: burlywood;
+}
+
+footer {
+    background-color: burlywood;
+    padding: 2rem;
+    text-align: center;
+}
