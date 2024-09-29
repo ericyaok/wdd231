@@ -101,7 +101,6 @@ nav li a {
 
 .grid-style.table-view {
     display: grid;
-    grid-column: 280px;
     justify-content: center;
     margin: 0;
     text-align: center;
