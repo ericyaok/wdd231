@@ -134,6 +134,91 @@ main {
 
 footer {
     background-color: burlywood;
-    padding: 2rem;
-    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+
+
+/*------------------------------------------------Homepage CSS-----------------------------*/
+#hero img {
+    display: none;
+}
+
+#call-action {
+    background-color: red;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 100px;
+}
+#events-weather div {
+    background-color: #e6eae7;
+    min-height: 150px;
+    margin: 1rem auto;
+}
+
+#events-weather h3 {
+  background-color: burlywood;
+  color:#5C4033;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.events-weather p {
+    padding: 0.7rem;
+  }
+
+
+#gold-members-wrapper section{
+    background-color: #e6eae7;
+    border-radius: 5px;
+}
+  
+
+/* social media Icons Footer */
+
+.footer-section {
+    display: grid;
+    margin: 1.5rem auto;
+}
+
+.footer-section span{
+    margin: 0.2rem;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.youtube {
+    background-color: #FF0000;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.linkedin {
+    background-color: #0077b5;
 }

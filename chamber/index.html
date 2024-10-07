@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Chamber of Commerce Website - Eric Kodzi">
+    <meta name="author" content="Eric Kodzi">
+    <title>WDD 231 - Chamber of Commerce Homepage - Eric Kodzi</title>
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="WDD 231 - Chamber of Commerce - Eric Kodzi">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ericyaok.github.io/wdd231/chamber/images/chamber-logo.png">
+    <meta property="og:url" content="https://ericyaok.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="scripts/chamber.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/chamber-logo.png" alt="" width="150" height="auto">
+        <button id="ham-menu">&#9776;</button>
+    </header>
+    <nav>
+        <ul id="menu-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Directory</a></li>
+            <li><a href="">Discover</a></li>
+            <li><a href="">Join</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="hero">
+            <img src="images/chamber-hero-croped.jpg" alt="hero image">
+            <p id="call-action">Join Now</p>
+        </section>
+        <h1>Home</h1>
+        <section id="events-weather">
+            <div>
+                <h3>Event</h3>
+                <p>The launch of cryptocurrency and AI in business</p>
+            </div>
+            <div>
+                <h3>Current Weather</h3>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <span id="temperature"></span>
+                <span id="description"></span>
+            </div>
+            <div>
+                <h3>Weather Forecast</h3>
+                <div id="weather-container"></div>
+            </div>
+        </section>
+        <section id="gold-members-wrapper">
+        </section>
+    </main>
+    <footer>
+        <div class="footer-inner-wrapper">
+            <div class="footer-section">
+                <span><b>Ghana Cahmber of Commerce</b></span>
+                <span>7th Shepherd AVE</span>
+                <span>#24 ARS, East Legon</span>
+                <span>chamber@ghana.com</span>
+                <span>+233 567 77 888</span>
+            </div>
+            <div class="social-media">
+                <a href="https://www.youtube.com" class="social-icon youtube" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com" class="social-icon facebook" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com" class="social-icon linkedin" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="footer-section">
+                <span>WDD231 Chamber of Commerce Project</span>
+                <span>Eric Yao Kodzi</span>
+                <span> &copy; <span id="currentyear"></span> Ghana Chamber Of Commerce</span>
+                <span>Last Modification: <span id="modified"></span></span>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
