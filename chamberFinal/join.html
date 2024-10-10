@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Chamber of Commerce Website Homepage- Eric Kodzi">
+    <meta name="author" content="Eric Kodzi">
+    <title>WDD 231 - Chamber of Commerce Subscription Confirmation Page - Eric Kodzi</title>
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="WDD 231 - Chamber of Commerce Subscription Confirmation Page - Eric Kodzi">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ericyaok.github.io/wdd231/chamber/images/chamber-logo.png">
+    <meta property="og:url" content="https://ericyaok.github.io/wdd231/chamber/thankyou.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="scripts/chamber.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="page-width header-inner-wrapper">
+            <img src="images/chamber-logo.png" alt="logo" width="150" height="auto">
+            <button id="ham-menu">&#9776;</button>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu-links page-width">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav>
+    <main class="join-main">
+        <div>
+            <form method="get" action="thankyou.html">
+                <h4>Membership Application Form</h4>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" title="Enter your first name"
+                    autocomplete="given-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" title="Enter your last name"
+                    autocomplete="family-name" required><br><br>
+
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title"
+                    autocomplete="honorific-prefix"  pattern="[A-Za-z\s\-]{7,}" 
+                    title="Please enter at least 7 characters using only letters, hyphens, and spaces." ><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" title="Enter your email" placeholder="erickodzi@gmail.com"
+                    autocomplete="email" required><br><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" title="Enter your phone number" autocomplete="tel"
+                    required><br><br>
+
+                <label for="business-name">Business Name:</label>
+                <input type="text" id="business-name" name="business-name" title="Enter your business name"
+                    autocomplete="organization"><br><br>
+
+                <label for="membership">Membership Level:</label>
+                <select id="membership" name="membership" required>
+                    <option value="" disabled selected>Select your membership level</option>
+                    <option value="non-profit">Non-Profit Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select><br><br>
+
+                <label for="description">Business/Organization Description:</label>
+                <textarea id="description" name="description" title="Enter a description of your business/organization"
+                    rows="4" cols="50" required></textarea><br><br>
+
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="membership-wrapper">
+            <h4>Membership Levels</h4>
+            <div class="membership-card">
+                <p><b>Non-Profit Membership Level</b></p>
+                <button class="open-btn" id="openModal1">Learn More</button>
+            </div>
+            <div class="membership-card">
+                <p><b>Bronze Membership Level</b></p>
+                <button class="open-btn" id="openModal2">Learn More</button>
+            </div>
+            <div class="membership-card">
+                <p><b>Silver Membership Level</b></p>
+                <button class="open-btn" id="openModal3">Learn More</button>
+            </div>
+            <div class="membership-card">
+                <p><b>Gold Membership Leve</b>l</p>
+                <button class="open-btn" id="openModal4">Learn More</button>
+            </div>
+
+            <!-- Dialog element for modal -->
+            <dialog id="modal1">
+                <h2>Non-Profit Membership</h2>
+                <p>Are you looking to elevate your business while making a meaningful impact in our community? Join our
+                    non-profit membership level and connect with like-minded professionals dedicated to fostering
+                    growth, collaboration, and innovation!.</p>
+                <!-- Button to close the modal -->
+                <button class="close-btn" id="closeModal1">Close</button>
+            </dialog>
+            <dialog id="modal2">
+                <h2>Bronze Membership Level</h2>
+                <p>Are you looking to grow your business while making a difference in our community? Our Bronze Level
+                    membership offers the perfect starting point for entrepreneurs and professionals eager to connect,
+                    learn, and thrive!</p>
+                <!-- Button to close the modal -->
+                <button class="close-btn" id="closeModal2">Close</button>
+            </dialog>
+            <dialog id="modal3">
+                <h2>Silver Membership Level</h2>
+                <p>Are you ready to take your business to the next level while contributing to the growth of our
+                    community? Become a Silver Level member of our non-profit business community and enjoy exclusive
+                    benefits designed to enhance your professional journey!</p>
+                <!-- Button to close the modal -->
+                <button class="close-btn" id="closeModal3">Close</button>
+            </dialog>
+            <dialog id="modal4">
+                <h2>Gold Membership Level</h2>
+                <p>Are you ready to supercharge your business while making a lasting impact in our community? Join our
+                    Gold Level membership and gain access to premier resources, connections, and opportunities that will
+                    elevate your professional journey!</p>
+                <!-- Button to close the modal -->
+                <button class="close-btn" id="closeModal4">Close</button>
+            </dialog>
+        </div>
+
+    </main>
+    <footer>
+        <div class="footer-inner-wrapper page-width">
+            <div class="footer-section">
+                <span><b>Ghana Cahmber of Commerce</b></span>
+                <span>7th Shepherd AVE</span>
+                <span>#24 ARS, East Legon</span>
+                <span>chamber@ghana.com</span>
+                <span>+233 567 77 888</span>
+            </div>
+            <div class="social-media">
+                <a href="https://www.youtube.com" class="social-icon youtube" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com" class="social-icon facebook" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com" class="social-icon linkedin" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="footer-section">
+                <span>WDD231 Chamber of Commerce Project</span>
+                <span>Eric Yao Kodzi</span>
+                <span> &copy; <span id="currentyear"></span> Ghana Chamber Of Commerce</span>
+                <span>Last Modification: <span id="modified"></span></span>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
