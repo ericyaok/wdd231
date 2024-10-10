@@ -1,0 +1,46 @@
+@media screen and (min-width: 750px) {
+
+    /*--------------------------Shared Sections CSS----------------------------------*/
+
+
+    /* Nav */
+
+    #ham-menu {
+        display: none;
+    }
+
+    .menu-links {
+        display: flex;
+        justify-content: end;
+    }
+
+    .menu-links.open {
+        display: flex;
+    }
+
+
+
+    /* Footer */
+
+    .footer-inner-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /*------------------------------Join Page------------------------------*/
+    .join-main {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    form,
+    .membership-wrapper {
+        
+        margin: 30px 50px;
+       
+    }
+
+
+
+}
