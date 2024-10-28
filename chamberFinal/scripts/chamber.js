@@ -127,3 +127,6 @@ if (currentPage.includes('thankyou.html')) {
 
     window.onload = getQueryParams;
 }
+
+
+

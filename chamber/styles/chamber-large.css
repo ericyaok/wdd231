@@ -1,5 +1,61 @@
 @media screen and (min-width: 750px) {
 
+
+
+
+
+    /*--------------------------Homepage CSS----------------------------------*/
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    #call-action {
+        position: relative;
+        bottom: 100px;
+        left: 200px;
+    }
+
+    #call-action:hover {
+        background-color: green;
+    }
+
+    #events-weather {
+        margin: 1.5rem auto;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    #events-weather div {
+        margin: 0;
+    }
+
+    #events-weather h3 {
+        text-align: left;
+    }
+
+
+    #gold-members-wrapper {
+        display: grid;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #gold-members-wrapper section {
+        margin: 0;
+        min-width: 200px;
+    }
+
+
+
     /*--------------------------Shared Sections CSS----------------------------------*/
 
 
@@ -36,9 +92,20 @@
 
     form,
     .membership-wrapper {
-        
+
         margin: 30px 50px;
-       
+
+    }
+
+
+    /*------------------------------Discover Page------------------------------*/
+
+    #discover-page {
+        display: flex;
+    }
+
+    .main-content img:hover {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.2);
     }
 
 

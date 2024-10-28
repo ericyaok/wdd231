@@ -1,0 +1,75 @@
+{
+    "companies": [
+      {
+        "name": "Tech Innovators Inc.",
+        "address": "123 Innovation Drive, Silicon Valley, CA",
+        "phoneNumber": "+1-800-123-4567",
+        "website": "https://www.techinnovators.com",
+        "iconFile": "tech_innovators.png",
+        "membershipLevel": 3,
+        "industry": "Technology",
+        "employees": 500
+      },
+      {
+        "name": "Green Earth Solutions",
+        "address": "456 Eco Way, Portland, OR",
+        "phoneNumber": "+1-503-456-7890",
+        "website": "https://www.greenearth.com",
+        "iconFile": "green_earth.png",
+        "membershipLevel": 2,
+        "industry": "Environmental Consulting",
+        "employees": 200
+      },
+      {
+        "name": "Blue Ocean Shipping",
+        "address": "789 Marina Blvd, Miami, FL",
+        "phoneNumber": "+1-305-123-9876",
+        "website": "https://www.blueoceanshipping.com",
+        "iconFile": "blue_ocean.png",
+        "membershipLevel": 3,
+        "industry": "Logistics",
+        "employees": 1000
+      },
+      {
+        "name": "Mountain Health Services",
+        "address": "321 Wellness Ave, Denver, CO",
+        "phoneNumber": "+1-720-555-4321",
+        "website": "https://www.mountainhealth.com",
+        "iconFile": "mountain_health.png",
+        "membershipLevel": 1,
+        "industry": "Healthcare",
+        "employees": 300
+      },
+      {
+        "name": "SmartCity Technologies",
+        "address": "654 Innovation Park, Austin, TX",
+        "phoneNumber": "+1-512-678-9101",
+        "website": "https://www.smartcitytech.com",
+        "iconFile": "smartcity_tech.png",
+        "membershipLevel": 2,
+        "industry": "Software Development",
+        "employees": 150
+      },
+      {
+        "name": "Global Food Distributors",
+        "address": "987 Food Market St, Chicago, IL",
+        "phoneNumber": "+1-312-456-7890",
+        "website": "https://www.globalfood.com",
+        "iconFile": "global_food.png",
+        "membershipLevel": 1,
+        "industry": "Food Distribution",
+        "employees": 400
+      },
+      {
+        "name": "Luxury Homes International",
+        "address": "741 Real Estate Blvd, New York, NY",
+        "phoneNumber": "+1-212-654-3210",
+        "website": "https://www.luxuryhomesintl.com",
+        "iconFile": "luxury_homes.png",
+        "membershipLevel": 3,
+        "industry": "Real Estate",
+        "employees": 250
+      }
+    ]
+  }
+  
