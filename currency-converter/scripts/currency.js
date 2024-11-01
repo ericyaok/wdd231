@@ -40,49 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* Fetch company data */
-const url = 'data/members.json';
-
-const displayCompanies = (companies, container) => {
-    companies.forEach((company) => {
-
-        let card = document.createElement('section');
-        card.classList.add('grid-style');
-        let name = document.createElement('h3');
-        let address = document.createElement('p');
-        let phone = document.createElement('p');
-        let website = document.createElement('p');
-        let portrait = document.createElement('img');
-
-
-        name.textContent = `${company.name}`;
-        address.textContent = `${company.address}`;
-        phone.textContent = `${company.phoneNumber}`;
-        website.textContent = `${company.website}`;
-
-        portrait.setAttribute('src', 'images/company-logo.jpeg');
-        portrait.setAttribute('alt', 'company logo');
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '140');
-        portrait.setAttribute('height', '140');
-
-
-        card.appendChild(portrait);
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phone);
-        card.appendChild(website);
-
-        container.appendChild(card);
-    });
-}
-
 
 /*------------------------------Script for Home Page---------------------------------*/
 
 if (currentPage.includes('index.html')) {
 
-    const apiKey = "d9ef40b80a8944e33d9c38ba";  // Replace with your ExchangeRate API key
+    const apiKey = "d9ef40b80a8944e33d9c38ba";  
     const apiUrl = `https://v6.exchangerate-api.com/v6/${apiKey}/latest/USD`;
 
     const amountInput = document.getElementById("amount");
@@ -104,7 +67,6 @@ if (currentPage.includes('index.html')) {
             }
         } catch (error) {
             resultDiv.textContent = "Error fetching currency data.";
-            console.error(error);
         }
     }
 
@@ -148,15 +110,12 @@ if (currentPage.includes('index.html')) {
             }
         } catch (error) {
             resultDiv.textContent = "Error converting currency.";
-            console.error(error);
         }
     }
 
     convertBtn.addEventListener("click", convertCurrency);
 
- 
     fetchCurrencies();
-
 }
 
 
@@ -219,15 +178,6 @@ if (currentPage.includes('countries.html')) {
 
 
 
-
-/*--------------------Script for Contact Page--------------------------*/
-
-if (currentPage.includes('contact.html')) {
-
-
-}
-
-
 /*--------------------Script for the Thankyou Page--------------------------*/
 
 if (currentPage.includes('thankyou.html')) {
@@ -241,7 +191,6 @@ if (currentPage.includes('thankyou.html')) {
         const email = params.get('email');
         const phone = params.get('phone');
         const description = params.get('description');
-
 
 
         const data = [
