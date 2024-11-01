@@ -177,7 +177,6 @@ if (currentPage.includes('countries.html')) {
 }
 
 
-
 /*--------------------Script for the Thankyou Page--------------------------*/
 
 if (currentPage.includes('thankyou.html')) {
