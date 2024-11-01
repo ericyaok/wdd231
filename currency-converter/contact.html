@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 231 - Currency Converter Contact- Eric Kodzi">
+    <meta name="author" content="Eric Kodzi">
+    <title>WDD 231 - Currency Converter Contactr - Eric Kodzi</title>
+    <link rel="stylesheet" href="styles/currency.css">
+    <link rel="stylesheet" href="styles/currency-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <meta property="og:title" content="WDD 231 - Currency Converter Contact - Eric Kodzi">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ericyaok.github.io/wdd231/currency-converter/images/currency-logo.webp">
+    <meta property="og:url" content="https://ericyaok.github.io/wdd231/currency-converter/contact.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="scripts/currency.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="page-width header-inner-wrapper">
+            <div>
+                <img src="images/currency-logo.webp" alt="logo" width="150" height="92">
+                <span>Currency Converter</span>
+            </div>
+            <button id="ham-menu">&#9776;</button>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu-links page-width">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="countries.html">Countries</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="contact-page">
+        <form method="get" action="thankyou.html">
+            <h4>Send Us A Message</h4>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name"
+                required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name"
+                required><br><br>
+
+           
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" title="Enter your email" placeholder="erickodzi@gmail.com"
+                autocomplete="email" required><br><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" title="Enter your phone number" autocomplete="tel"
+                required><br><br>
+
+            <label for="description">Message:</label>
+            <textarea id="description" name="description" title="Type your message here"
+                rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+    </main>
+    <footer>
+        <div class="footer-inner-wrapper page-width">
+            <div class="footer-section">
+                <span><b>Currency Converter</b></span>
+                <span>7th Shepherd AVE</span>
+                <span>#24 ARS, East Legon</span>
+                <span>currency@ghana.com</span>
+                <span>+233 567 77 888</span>
+            </div>
+            <div class="social-media">
+                <a href="https://www.youtube.com" class="social-icon youtube" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com" class="social-icon facebook" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com" class="social-icon linkedin" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            <div class="footer-section">
+                <span>Currency Converter</span>
+                <span>Eric Yao Kodzi</span>
+                <span> &copy; <span id="currentyear"></span> </span>
+                <span>Last Modification: <span id="modified"></span></span>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+@media screen and (min-width: 750px) {
+
+
+
+
+
+    /*--------------------------Homepage CSS----------------------------------*/
+    main {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    
+
+
+
+    /*--------------------------Shared Sections CSS----------------------------------*/
+
+
+    /* Nav */
+
+    #ham-menu {
+        display: none;
+    }
+
+    .menu-links {
+        display: flex;
+        justify-content: end;
+    }
+
+    .menu-links.open {
+        display: flex;
+    }
+
+
+
+    /* Footer */
+
+    .footer-inner-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+   
+
+
+
+
+
+}

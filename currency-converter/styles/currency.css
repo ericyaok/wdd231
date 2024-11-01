@@ -1,0 +1,326 @@
+/*---------------------CSS Reset-------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+
+
+/*-----------------------------------Shared Sections CSS--------------------*/
+
+body {
+    line-height: 1;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-width {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    padding: 1rem 0;
+    border-bottom: 2px solid #5C4033;
+}
+
+.header-inner-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-inner-wrapper div {
+    display: grid;
+    align-items: center;
+    color: #5C4033;
+}
+
+
+/* Nav */
+
+#ham-menu {
+    color: #5C4033;
+    font-size: 2.5rem;
+}
+
+nav {
+    background-color: burlywood;
+
+}
+
+nav li {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+
+nav li a {
+    color: #5C4033;
+    font-weight: bold;
+    padding: 1rem 1rem;
+    margin-left: 3rem;
+    display: block;
+}
+
+nav li a:hover {
+    background-color: white;
+}
+
+
+.menu-links {
+    display: none;
+}
+
+.menu-links.open {
+    display: block;
+}
+
+.menu-links a.active {
+    font-weight: bold;
+    background-color: white;
+}
+
+
+
+
+/* Main */
+main {
+    flex: 1;
+}
+
+
+
+
+/* Footer */
+
+footer {
+    background-color: burlywood;
+    font-size: 0.9rem;
+}
+
+.footer-section {
+    display: grid;
+    margin: 1.5rem 0;
+}
+
+.footer-section span {
+    margin: 0.2rem;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    opacity: 0.8;
+}
+
+.youtube {
+    background-color: #FF0000;
+}
+
+.facebook {
+    background-color: #3b5998;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+
+/*------------------------------------------------Homepage CSS-----------------------------*/
+.converter-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input,
+select,
+#convert-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.converter-container button {
+    background-color: burlywood;
+    color: #5C4033;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+
+
+/*------------------------------------------------Countries CSS-----------------------------*/
+.country {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.country img {
+    width: 100px;
+    border-radius: 5px;
+}
+
+#country-modal {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    max-width: 500px;
+    margin: auto;
+    background-color: burlywood;
+    color: #5C4033;
+}
+
+
+#country-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#close-modal {
+    color: red;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+
+
+
+/*------------------------------Contact Page CSS-------------------------------------*/
+
+/* Form CSS */
+
+form {
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form h4 {
+    margin-bottom: 20px;
+    color: #5C4033;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input:focus {
+    border-left: 4px solid burlywood;
+    outline: none;
+}
+
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5C4033;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+
+/*------------------------------Thankyou Page CSS-------------------------------------*/
+
+
+#subscription-data {
+    margin: 1.5rem;
+}
+
+#subscription-data span {
+    margin: 0.2rem;
+    display: block;
+}
